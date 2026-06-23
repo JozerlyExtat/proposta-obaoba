@@ -120,6 +120,12 @@
   .inv-total-block{margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.2);}
   .inv-total-label{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,.6);margin-bottom:4px;}
   .inv-total-val{font-size:28px;font-weight:800;color:#BFDBFE;}
+  .inv-fee-block{margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,.2);display:flex;flex-direction:column;gap:12px;}
+  .inv-fee-row{display:flex;align-items:flex-start;gap:12px;}
+  .inv-fee-pct{flex-shrink:0;min-width:54px;font-size:22px;font-weight:800;letter-spacing:-1px;color:#BFDBFE;line-height:1.1;}
+  .inv-fee-text{font-size:12.5px;line-height:1.45;color:rgba(255,255,255,.85);}
+  .inv-fee-text strong{color:#fff;font-weight:700;}
+  .inv-fee-row.extra .inv-fee-pct{color:#FDE68A;}
   .inv-sidebar{display:flex;flex-direction:column;gap:14px;}
   .inv-info-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 1px 3px rgba(24,34,58,.04);}
   .inv-info-title{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:700;color:var(--muted);margin-bottom:12px;}
@@ -379,12 +385,18 @@
   </div>
   <div class="inv-layout">
     <div class="inv-main-card">
-      <div class="inv-label">Mensalidade de acompanhamento</div>
+      <div class="inv-label">Retainer fee · acompanhamento</div>
       <div class="inv-value">R$ 3.500</div>
-      <div class="inv-sub">por mês · durante 3 meses</div>
-      <div class="inv-total-block">
-        <div class="inv-total-label">Investimento total no projeto</div>
-        <div class="inv-total-val">R$ 10.500</div>
+      <div class="inv-sub">por mês · durante 3 meses (R$ 10.500 no total)</div>
+      <div class="inv-fee-block">
+        <div class="inv-fee-row">
+          <div class="inv-fee-pct">1%</div>
+          <div class="inv-fee-text"><strong>Success fee</strong> sobre o valor transacionado, devido na conclusão de uma operação de venda ou captação de investimento.</div>
+        </div>
+        <div class="inv-fee-row extra">
+          <div class="inv-fee-pct">+3%</div>
+          <div class="inv-fee-text"><strong>Captação do comprador pela Extat:</strong> acréscimo de 3% ao success fee (totalizando 4% sobre o valor transacionado) caso a Extat origine e apresente o comprador ou investidor.</div>
+        </div>
       </div>
     </div>
     <div class="inv-sidebar">
